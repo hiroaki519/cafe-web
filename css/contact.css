@@ -1,0 +1,514 @@
+body{
+  color: #a9a9a9;
+   font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Noto Sans Japanese', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+}
+ /* headerです contactとmenu共通です */
+.header{
+  width: 1330px;
+}
+.header-back{
+  width: 26%;
+  background-color: #A9A9A9;
+  margin-left: 6px;
+  font-weight: bold;
+  
+  height: 127px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header-time{
+  height: 108px;
+  width: 94%;
+ color: white;
+ border-left:dashed 2px white;
+ border-right:dashed 2px white;
+ border-bottom:dashed 2px white;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ text-align: center;
+ margin-left: 8px;
+ padding-top: 10px;
+}
+.header-time p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content{
+  display: flex;
+}
+.logo{
+  margin-left:auto;
+  margin-right: 14px;
+  margin-top: 3px;
+}
+.fab{
+  font-size: 2.5em;
+}
+.fa-twitter-square{
+  color: black;
+}
+.fa-facebook-square{
+  color: gray;
+}
+.fa-instagram{
+  color: black;
+}
+.logo .fab:hover{
+  opacity: 0.6;
+}
+#list ul{
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 364px;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  height: 60px;
+  padding-right: 23px;
+  color: rgba(0,0,0,.5);
+}
+#list ul li{
+  line-height: 4em;
+  font-size:17px;
+  cursor: pointer;
+  margin-left: auto;
+}
+#list ul li:hover{
+  color: rgba(0,0,0,.7);
+}
+#list ul li a{
+  text-decoration: none;
+  color: rgba(0,0,0,.5);
+}
+#list ul li a:hover{
+  color: rgba(0,0,0,.7);
+}
+
+
+/* headerの下の部分です 　contactとmenu共通です*/
+.top-site{
+  background-image: url(../images/cafe-image.jpg); 
+  height: 350px;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  box-shadow: 0 10px 10px #EBEBEB;
+}
+
+.top-coment{
+  height: 140px;
+  color: white;
+  font-size: 23px;
+  position: absolute;
+  top: 204px;
+  left: 15%;
+}
+.top-coment p{
+  font-size: 1.3rem;
+   font-weight: 300;
+   color: #FFFFFF;
+}
+
+.top-image{
+  background-color: #343A40;
+  border-radius: 50%;
+  width: 242px;
+  height: 242px;
+  position: absolute;
+  top: 138px;
+  left: 14%;
+}
+.top-logo{
+  margin-top: 74px;
+  margin-left: 74px;
+}
+/* contactです */
+.contact-li ul{
+  list-style-type: none;
+  display: flex;
+  margin-top: 12px;
+  padding-left: 23px;
+}
+.contact-li ul a{
+  text-decoration: none;
+  color: #555;
+}
+.contact-li ul li:nth-child(2):before{
+  content:"≫";
+  margin: 0 8px;
+}
+.contact-li ul a:hover{
+  color: #86AFDB;
+  text-decoration: underline #86AFDB;
+}
+.contact-form h2{
+  text-align: center;
+  font-size: 80px;
+  font-weight:normal;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+#contact-wrapper{
+  width: 754px;
+  margin: 0 auto;
+}
+label{
+  display: flex;
+}
+dl{
+  font-size: 16px;
+}
+dt{
+  padding: 1em 0;
+  display: inline-block;
+  width: 220px;
+  font-weight: normal;
+}
+.day{
+  display: block;
+  font-weight: normal;
+}
+.time{
+  margin-left: 56px;
+  margin-bottom: 8px;
+}
+input{
+  padding: 8px;
+  width: 476px;
+  border-radius: 3px;
+  border: solid 1px #CED4DA;
+}
+input[type="number"]{
+  width: 111px;
+}
+input[type="date"]{
+  margin-bottom: 20px;
+}
+input[type="checkbox"]{
+  width: initial;
+  margin-left: 30px;
+  margin-top: 24px;
+  transform: scale(0.95);
+}
+.contact-check{
+  margin-top: 8px;
+}
+.contact-plan{
+  display: flex;
+}
+.person-info{
+  display: flex;
+}
+input[type="checkbox"] + label{
+  margin-top: 22px;
+  margin-left: 8px;
+  font-size: 13px;
+  font-weight: normal;
+}
+button[type="submit"]{
+  color: white;
+  background-color: #6c757d;
+  padding: 10px 3rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  margin-top: 23px;
+  margin-left: 44px;
+  cursor: pointer;
+  border-style: none;
+}
+.submit-button:hover{
+  background-color: #5A6268;
+}
+.sponsor1{
+  text-align: center;
+  border-top: solid 1px #CED4DA;
+  margin-top: 40px;
+  padding: 38px 0;
+}
+.container-back-gray{
+  margin-top: 25px;
+  background: linear-gradient(45deg, #A9A9A9 50%, transparent 52%),
+    linear-gradient(315deg, #A9A9A9 50%, transparent 52%);
+  background-size: 60px 60px;
+  height: 60px;
+}
+/* 電話やメールでの受付部分 */
+.ad{
+  height: 400px;
+  background-color: #A9A9A9;
+  color: #FFFFFF;
+  padding-top: 30px;
+}
+.ad-text{
+  width: 75%;
+  margin: 0 auto;
+}
+.ad h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.75em;
+}
+.ad p{
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.ad h4{
+  margin: 50px 0;
+  font-size: 1.5em;
+}
+.sponsor2{
+  text-align: center;
+}
+/* accsess 　contactとmenu 共通です*/
+.container-back-white{
+  margin-top: -30px;
+  background: linear-gradient(45deg, #FFFFFF 50%, transparent 52%),
+    linear-gradient(315deg, #FFFFFF 50%, transparent 52%);
+  background-size: 60px 60px;
+  height: 60px;
+}
+.accsess{
+  display: flex;
+  padding-top: 32px;
+  width: 84%;
+  margin: 0 auto;
+}
+.accsess-texts{
+  text-align: center;
+}
+.accsess-texts h2{
+  font-size: 4rem;
+   font-weight: 500;
+   line-height: 1.2;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+.accsess-texts p{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.accsess-nav p:first-child{
+ margin-top: 24px;
+}
+.accsess-nav p:last-child{
+  margin-bottom: 24px;
+}
+.news-right{
+  background-color: #A9A9A9;
+  color: #FFFFFF;
+  width: 468px;
+  height: 596px;
+  border-radius: 16px;
+  margin-left: 22px;
+  margin-top: 16px;
+}
+.news-right a{
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-left: 84px;
+  font-size: 24px;
+  color: white;
+  line-height: 24px;
+  text-decoration: none;
+}
+.news-right-back{
+  border:dashed 2px white;
+  height: 575px;
+  width: 430px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-left: 14px;
+}
+.news-right-back img{
+  width: 388px;
+  height: 86px;
+  margin-top: 18px;
+}
+.contact{
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  margin-right: 16px;
+  padding-top: 26px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 20px;
+  
+}
+.contact p{
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.contact p:nth-child(2){
+  margin-bottom: 6px;
+}
+.plan{
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 20px;
+  padding-top: 26px;
+}
+.plan p{
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.plan p:nth-child(2){
+  margin-bottom: 14px;
+}
+
+
+
+
+/* footerです */
+footer{
+  height: 35px;
+  background-color: #A9A9A9;
+}
+footer p{
+  margin-top: 0;
+  text-align: center;
+  color: #FFFFF1;
+}
+.footer-year{
+  font-size: 0.8em;
+}
+.footer-back{
+  margin-top: -50px;
+}
+
+
+
+/* ここからmenuのcss */
+.container-back-red{
+  margin-top: 30px;
+  background: linear-gradient(45deg, #F8F9FA 50%, transparent 52%),
+    linear-gradient(315deg, #F8F9FA 50%, transparent 52%);
+  background-size: 60px 60px;
+  height: 60px;
+}
+.menu{
+  display: flex;
+  margin-left: 16px;
+  padding-top: 78px;
+  background-color: #F8F9FA;
+  height: 2500px;
+}
+.menu-left{
+  width: 401px;
+}
+.menu-left-texts{
+  border: 1px solid #DEE2E6;
+  margin-top: 8px;
+}
+.menu-left-text{
+  width: 90%;
+  border-bottom: 1px solid #DEE2E6;
+  margin: 0 auto;
+}
+.menu-left img{
+  width: 100%;
+}
+
+.menu-left a{
+  color: #555;
+  text-decoration: none;
+  font-size: 1.75em;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 12px;
+}
+.menu-left p{
+  margin-top: 4px;
+}
+.menu-left a:hover{
+  color: #3277C1;
+  text-decoration: underline #3277C1;
+}
+.menu-right{
+  width: 860px;
+  margin-left: 76px;
+  padding-right: 30px;
+}
+.menu-right h2{
+  font-size: 3.5em;
+  margin-top: 0;
+  text-align: center;
+}
+.menu-right h3{
+  font-size: 1.75em;
+}
+
+.menu-right-content{
+  display: flex;
+  border-bottom: 1px solid #DEE2E6;
+  padding-top: 96px;
+  padding-bottom: 113px;
+}
+.menu-right-top{
+  border-top: 1px solid #DEE2E6;
+}
+.menu-right-content img{
+  width: 100%;
+  height: 100%;
+}
+
+.menu-right-img{
+  position: relative;
+  width: 80%;
+}
+.menu-right-date h3{
+  background-color: #E7BC72;
+  color: white;
+  font-weight: normal;
+  font-size: 1.6em;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  position: absolute;
+  top: -33%;
+  left: -5%;
+  margin-top: 0;
+}
+.menu-right-text{
+  margin-left: 30px;
+  padding-right: 15px;
+}
+.menu-right-text h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.money{
+  text-align: right;
+}
+.menu-margin{
+  margin-left: 0;
+  margin-right: 7px;
+}
+
+.menu-position{
+  position: relative;
+  width: 76%;
+}
+.menu-position h3{
+  background-color: #E7BC72;
+  color: white;
+  font-weight: normal;
+  font-size: 1.6em;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  position: absolute;
+  top: -100px;
+  right: -20px;
+}

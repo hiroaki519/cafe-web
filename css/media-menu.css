@@ -1,0 +1,339 @@
+body{
+  color: #a9a9a9;
+   font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Noto Sans Japanese', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+}
+/* レスポンシブ対応1024px以下 */
+/* headerのレスポンシブ */
+@media screen and (max-width:1024px){
+  .header-back {
+    width: 66.5%;
+    height: 80px;
+}
+.header-time {
+  height: 60px;
+  width: 97%;
+  margin: 0 auto;
+}
+  .header-time-top{
+    display: flex;
+    width: 330px;
+    margin: 0 auto;
+  }
+  .header-time-top p:first-child{
+    margin-right: 5px;
+  }
+  .header-time-bottom{
+    display: flex;
+    width: 330px;
+    margin: 0 auto;
+  }
+  .header-time-bottom p:first-child{
+    margin-right: 5px;
+  }
+  .top-image {
+    top: 88px;
+    left: 5%;
+}
+  .top-coment {
+    top: 214px;
+    left: 5%;
+  }
+  /* DAIRY SPECIALのレスポンシブ対応1024px以下 */
+  .menu {
+    flex-direction: column-reverse;
+    height: 4240px;
+    padding-bottom: 120px;
+    margin-left: 0px;
+}
+  .menu-left {
+    width: 673px;
+    margin: 0 auto;
+  }
+  .menu-left img {
+    display: none;
+}
+.menu-left-texts {
+  margin-top: 60px;
+}
+.menu-left-text {
+  width: 640px;
+  margin: 0 auto;
+}
+.menu-left-text:nth-child(6){
+  padding-bottom: 20px;
+}
+.menu-left p {
+  display: none;
+}
+  .menu-right {
+    width: 100%;
+    margin-left: 0px;
+}
+.menu-right-text {
+  margin-left: 0px;
+}
+.menu-position {
+  width: 100%;
+}
+.menu-right-content {
+  display: flex;
+  flex-direction: column;
+  width: 662px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.menu-right-content-flex{
+  flex-direction: column-reverse;
+}
+.menu-right-content img {
+  width: 662px;
+}
+.menu-right-date h3 {
+  position: absolute;
+  top: -23%;
+  left: -3%;
+}
+.menu-position h3 {
+  position: absolute;
+  top: -100px;
+  right: -20px;
+}
+/* ACCSESSのレスポンシブ対応　1024px以下 */
+.accsess {
+  display: flex;
+  flex-direction: column;
+}
+.ggmap{
+  width: 680px;
+  height: 400px;
+  margin: 0 auto;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.news-right {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-right-back {
+  height: 575px;
+  width: 660px;
+  margin-top: 9px;
+}
+.plan {
+  font-size: 1.5em;
+  line-height: 22px;
+  padding-top: 26px;
+}
+.plan-top{
+  display: flex;
+}
+.plan-top p:first-child{
+  margin-right: 10px;
+}
+/* contact.htmlのcontact部分　1024px以下 */
+#contact-wrapper {
+  width: 698px;
+}
+input {
+  width: 420px;
+}
+
+.ad {
+  height: 500px;
+}
+.ad-information{
+  display: block;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+/* レスポンシブ対応　601px以上 ハンバーガーメニュー用*/
+@media screen and (min-width:601px){
+  .fa-bars{
+    position: absolute;
+    top: -50px;
+  }
+  label[for="check-box"]{
+    margin-top: 0!important;
+  }
+  #check-box{
+    display: none;
+    margin-top: 0px;
+    position: absolute;
+    left: 0;
+  }
+
+
+
+
+
+
+}
+
+
+/* レスポンシブ対応　599px以下 */
+/* 599以下　ヘッダー　ハンバーガーメニュー */
+@media screen and (max-width:600px){
+  header{
+    margin-top: 70px;
+  }
+ .header-back{
+  display: none;
+}
+#list ul{
+  flex-direction: column;
+  width: initial;
+  padding-left: 30px;
+  display: none;
+}
+#list ul li{
+  margin: initial;
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+#check-box{
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  margin-top: 0px;
+  transform: scale(1.5);
+}
+.fa-bars{
+  margin-top: 0px;
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  border: solid 1px #ACA9A9;
+  padding: 5px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.logo{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+input[type=checkbox]:checked ~ .top-site{
+  margin-top: 180px;
+}
+input[type=checkbox]:checked ~ .top-image{
+  top: 88%;
+  left: 5%;
+}
+input[type=checkbox]:checked ~ #list ul{
+  display: block;
+}
+.top-site{
+  transition: all 0.3s;
+}
+.top-image {
+  top: 18%;
+  left: 5%;
+  width: 132px;
+  height: 132px;
+  transition: all 0.3s;
+}
+.top-logo {
+  width: 68px;
+  margin-top: 31px;
+  margin-left: 33px;
+}
+.top-coment p {
+  font-size: 1rem;
+}
+/* レスポンシブ599以下　mainメニュー */
+.menu {
+  height: 3650px;
+}
+.menu-right h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+.menu-right-content {
+  width: 91%;
+  margin: 0 auto;
+}
+.menu-right-content img {
+  width: 100%;
+}
+.menu-right-img {
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+}
+.menu-left {
+  width: 94%;
+}
+.menu-left-text {
+  width: 94%;
+}  
+/* accsess599px レスポンシブ*/
+.accsess-nav-texts{
+  display: block;
+}
+.ggmap {
+  width: 100%;
+}
+.accsess {
+  width: 93%;
+}
+.news-right {
+  width: 100%;
+  height: 610px;
+}
+.news-right-back {
+  width: 93%;
+  height: 588px;
+}
+.plan-top {
+  display: block;
+}
+.news-right-back img {
+  width: 95%;
+  height: 15%;
+}
+.news-right a {
+  margin-left: 20%;
+}
+#contact-wrapper {
+  width: 500px;
+}
+input {
+  width: 310px;
+}
+.ad {
+  height: 520px;
+}
+label:nth-child(5) dt{
+  width: 133px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

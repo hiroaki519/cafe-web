@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/media-menu.css">
+  <title>cafe-contact</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <!--headerです-->
+<header>
+  <input type="checkbox" id="check-box">
+  <label for="check-box"><i class="fas fa-bars fa-2x"></i></label>
+  <div class="content">
+    <div class="header-back">
+      <div class="header-time">
+        <div class="header-time-top">
+          <p>OPEN 07:00 - CLOSE 22:00 </p> 
+          <p>(LO.21:30)</p> 
+        </div>
+        <div class="header-time-bottom">
+          <p>LUNCH TIME 11:30 - 14:00</p> 
+          <p>(LO.13:30)</p>
+        </div>
+      </div>
+    </div>
+    <div class="logo">
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <nav id="list">
+    <ul>
+      <li>MENU</li>
+      <li>MENU</li>
+      <li>MENU</li>
+      <li>MENU</li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="top-site">
+    <div class="top-coment">
+      <p>This is a simple hero unit, a simple jumbotron-style<br>
+        component for calling extra attention to featured content or information.
+      </p>
+    </div>
+  </div> 
+  <div class="top-image">
+    <img src="images/logo-mark-wt.png" alt="サイトロゴ" class="top-logo">
+  </div>
+</header>
+<!--headerの下の部分です-->
+<!--contactです-->
+<div class="contact-li">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li>CONTACT</li>
+  </ul>
+</div>
+<form action="#" method="post" class="contact-form">
+  <h2>CONTACT</h2>
+  <div id="contact-wrapper">
+    <dl>
+      <label>
+        <dt>お名前</dt>
+        <dd><input type="text" name="name" required placeholder="入力してください"></dd></label>
+      <label>
+        <dt>フリガナ</dt>
+        <dd><input type="text" name="kana" required placeholder="入力してください"></dd>
+      </label>  
+      <label>
+        <dt>メールアドレス</dt>
+        <dd><input type="email" name="email" required placeholder="入力してください"></dd>
+      </label>
+      <label>
+        <dt>Tel</dt>
+        <dd><input type="tel" name="tel" required placeholder="入力してください"></dd>
+      </label>
+      <label>
+        <dt>人数</dt>
+        <dd><input type="number" name="people" required></dd>
+      </label>
+      <div class="contact-plan">
+        <dt>ご予約希望日</dt>
+        <div class="contact-check"> 
+          <label class="day">
+            <dd class="time">日付</dd>
+            <dd><input type="date" name="date" required placeholder=" 年 /月/日"></dd>
+           </label>
+           <label class="day">
+            <dd class="time">時間</dd>
+            <dd><input type="time" name="time" required placeholder="--:--"></dd>
+          </label>
+            <dd class="person-info">
+              <input type="checkbox" name="check" value="check" id="check"><label for="check">個人情報に同意する</label>
+            </dd>
+          <dd><button type="submit" name="send" class="submit-button">送信</button></dd>
+        </div>
+      </div>
+    </dl>
+  </div>
+</form>
+<p class="sponsor1">スポンサーリンク</p>
+
+<!--電話やメールでの受付部分-->
+<div class="container-back-gray"></div>
+<div class="ad">
+  <div class="ad-text">
+    <h3>ご予約はお電話やメールでも受け付けています。</h3>
+    <p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。 なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、 いくら威張っても、そこから飛び降りる事は出来まい。
+    </p>
+    <h4><span class="ad-information"> TEL : 03-1234-5678 </span><span class="ad-information">E-Mail : info@example.com</span></h4>
+    <p class="sponsor2">スポンサーリンク</p>
+  </div>
+</div>
+<!--accsess-->
+<div class="container-back-white"></div>
+<div class="accsess">
+  <div class="accsess-texts">
+    <h2>ACCSESS</h2>
+    <div class="accsess-nav">
+      <p>アクセス：JR「浜松町」下車 南口改札 徒歩12分</p> 
+      <p>都営地下鉄三田線「芝公園」 (I05)下車 徒歩2分</p>
+      <p>都営地下鉄浅草線・大江戸線「大門」 (A09・E20)下車 徒歩5分</p>  
+    </div>
+    <div class="ggmap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030380877!2d139.76493611526485!3d35.68123618019438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1616228219469!5m2!1sja!2sjp" width="634" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div class="news-right">
+    <div class="news-right-back">
+      <img src="images/template-logo (1).png" alt="">
+      <a href="index.html">http://example.com/</a> 
+      <div class="contact">
+        <p>店舗名：SAMPLE SHOP</p>
+        <p>住所：東京都港区芝8丁目0-0</p>
+        <p>ビジネスビル1F</p>
+        <p>ご予約・お問い合わせ</p>
+        <p>電話番号：03-1234-5678</p>
+        <p>E-Mail：info@example.com</p>
+      </div>
+      <div class="plan">
+        <p>OPEN 07:00 - CLOSE 22:00 </p>
+        <p>(LO.21:30)</p>
+        <p>LUNCH TIME</p>
+        <p>11:30 - 14:00 (LO.13:30)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footerです-->
+<div class="container-back-gray"></div>
+<footer>
+  <p><span class="footer-year">20XX</span><small>&copy; あなたのサイト名 All Right Reserved.</small></p>
+</footer>  
+
+
+</body>
+</html>
